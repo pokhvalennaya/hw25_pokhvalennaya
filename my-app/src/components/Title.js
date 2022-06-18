@@ -6,7 +6,7 @@ const Title = ({ name, type }) => {
 
 Title.propTypes = {
   name: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["bold", "normal"]),
 };
 
 Title.defaultProps = {

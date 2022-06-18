@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Title from "./components/Title.js";
 
-const IsOpenedTitle = () => {
+function App() {
   const [open, setOpened] = useState(false);
 
   const handleOpen = () => {
@@ -18,14 +18,6 @@ const IsOpenedTitle = () => {
     );
   }
   return <button onClick={handleOpen}>Open titles</button>;
-};
-
-function App() {
-  return (
-    <div>
-      <IsOpenedTitle />
-    </div>
-  );
 }
 
 export default App;
